@@ -1,0 +1,25 @@
+# Scouter Server IP Address (Default : 127.0.0.1)
+# net_collector_ip=SCOUTER_HOST
+
+# Scouter Server Port (Default : 6100)
+# net_collector_tcp_port=6100
+# net_collector_udp_port=6100
+#
+ext_plugin_influxdb_enabled=true
+ext_plugin_influxdb_measurement=counter
+
+#properties for using udp protocol(default)
+ext_plugin_influxdb_udp=false
+#ext_plugin_influxdb_udp_local_ip : UDP local address (default : null)
+#ext_plugin_influxdb_udp_local_port : UDP local address (default : 0)
+#ext_plugin_influxdb_udp_target_ip=CLUSTERIP
+#ext_plugin_influxdb_udp_target_port=8089
+
+##properties for using http protocol (set false ext_plugin_influxdb_udp for using http)
+ext_plugin_influxdb_http_target_ip=CLUSTERIP
+ext_plugin_influxdb_http_target_port=8086
+
+##ext_plugin_influxdb_http_retention_policy : measurement retention policy (default : default)
+ext_plugin_influxdb_id=root
+ext_plugin_influxdb_password=root
+ext_plugin_influxdb_dbName=POD_NAMESPACE
